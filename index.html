@@ -36,7 +36,7 @@
         enterARButton.disabled = !event.detail.supported;
       }, false);
 
-      enterARButton.addEventListener('load', function (event) {
+      enterARButton.addEventListener('click', function (event) {
         document.dispatchEvent(new CustomEvent('toggleAR', {}));
       }, false);
 
