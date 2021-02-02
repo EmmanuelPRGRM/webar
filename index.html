@@ -36,9 +36,11 @@
       document.addEventListener('onARSupportedCheck', function (event) {
         enterARButton.disabled = !event.detail.supported;
       }, false);
-      enterARButton.addEventListener('click', function (event) {
+
+      enterARButton.addEventListener('load', function (event) {
         document.dispatchEvent(new CustomEvent('toggleAR', {}));
       }, true);
+
     </script>
     <script src="gl-matrix-min.js"></script>
     <script src="webxr.js"></script>
