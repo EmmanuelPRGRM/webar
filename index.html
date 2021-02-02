@@ -27,7 +27,6 @@
       <div id="unityContainer" style="width: 100%; height: 100%"></div>
       <div class="footer">
         <button class="enterar" id="enterar" value="Enter AR" disabled>AR</button>
-        <div class="title">Unity-WebXR-Export</div>
       </div>
     </div>
     <script>
@@ -39,7 +38,7 @@
 
       enterARButton.addEventListener('load', function (event) {
         document.dispatchEvent(new CustomEvent('toggleAR', {}));
-      }, true);
+      }, false);
 
     </script>
     <script src="gl-matrix-min.js"></script>
